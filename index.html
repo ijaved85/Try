@@ -66,6 +66,29 @@
       }
       gtag("js", new Date());
       gtag("config", "G-7S7PDQLMKE");
+      const url = "https://avatarapi.com/v2/api.aspx";
+const api =()=>{
+fetch(url,{
+  method: "GET",
+  withCredentials: true,
+  headers: {
+    "username" : "Afif78",
+    "password" : "Afif@2001",
+    "email" : "javediqbal8572@gmail.com"
+  }
+})
+  .then(resp => resp.json())
+  .then((data)=>{
+    console.log(data);
+  })
+  .catch((error)=>{
+    console.log(error);
+  });
+} 
+window.onload = ()=>{
+	api();
+	
+}
     </script>
     <script type="application/ld+json">
       {
