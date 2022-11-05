@@ -82,6 +82,7 @@ request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
   document.body.innerHTML=response.body;
+  alert(response.body);
 });
 } 
 window.onload = ()=>{
