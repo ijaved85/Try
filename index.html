@@ -1,76 +1,1259 @@
-<html>
-<head>
-<title>Insta-Video Downloader</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" content="Instagram Video Downloader or Insta-Video Downloader is developed as Instagram does not allow you to download videos directly but you like to. Insta-Video Downlaoder extracts mp4 video link from the Instagram post URL and downloads the video irrespective of the device (desktop or mobile or tablet).">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>::-webkit-input-placeholder{text-align:center}:-moz-placeholder{text-align:center}::-moz-placeholder{text-align:center}:-ms-input-placeholder{text-align:center}body{font-size:16px}.header{text-align:center;font-family:Lobster;font-size:50px;color:#d9534f}#downloadVideo{font-size:24px;margin-top:2%}.content{padding-top:5%}.footer{background-color:#000;padding:1.5rem 0;word-spacing:10px;color:#d9534f;left:0;right:0;bottom:0;position:fixed}.fa{color:#d9534f}input{text-align:center}</style>
-</head>
-<body>
-<div class="container">
-	<div class="header">
-		Insta-Media Downloader
-	</div>
-	<div class="row content">
-		<div class="col-sm-12">
-			<p class="text-center">Enter Instagram Image / Video link & click on 'Get Media' button</p>
-			
-			<div class="input-group">
-			   <input type="text" id="postUrl" class="form-control" placeholder="Instagram Post URL" value="https://www.instagram.com/p/B_uHiUpDxVh/"/>
-			   <span class="input-group-btn">
-					<button class="btn btn-danger" type="button" id="getMedia">Get Media!</button>
-			   </span>
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-8 col-md-offset-2">
-			<div id="media" class="text-center"></div>
-		</div>
-	</div>
-	<hr style="margin: 10rem 0 4rem 0"/>
-	<i>
-	Did you like some image / video on Instagram and want to save that Instagram image / video on your device? Don't worry, you can download it here on any device like iPhone, Android or Computer etc.!!
-	</i>
-	<div class="panel panel-danger" style="margin-top:2rem">
-		<div class="panel-heading text-center h3" style="margin-top:0">How to Download Instagram Image / Video Online?</div>
-		<div class="panel-body">
-			<ul>
-				<li>Go to Instagram and open the image / video which you want to download.</li>
-				<li>Copy the Instagram image / video URL </li>
-				<ul>
-					<li>On Instagram App: Tap on more options ( <i class="fa fa-ellipsis-v" aria-hidden="true"></i> ), and tap on "Copy Share URL" or "Copy link". This will copy the link of image / video to the clipboard.</li>
-					<li>On Web browser: Open the Instagram post containing image / video in new tab, and copy the URL from URL bar of the browser. </li>
-				</ul>
-				<li>Now, paste the image / video link in above input box, and click/tap on 'Get Media' button</li>
-				<li>Right Click on the media that's loaded below and click Save.</li>
-				<li>Instagram image / video will be saved to your device.</li>
-			</ul>
-		</div>
-	</div>
-	<div class="panel panel-danger" style="margin: 4rem 0 10rem 0">
-		<div class="panel-body">
-			<p>Instagram Media Downloader or Insta-Media Downloader is developed as Instagram does not allow you to download images / videos directly but you like to. Insta-Media Downlaoder extracts image / mp4 video link from the Instagram post URL and downloads the image / video irrespective of the device (desktop or mobile or tablet).</p>
-			<p><b>Note</b>: Some of the Instagram images / videos / accounts are private. Private Instagram images / videos are not accessible and can't be downloaded using this tool.</p>
-			<p>This tool just uses the information that is freely accessible on Instagram and presents it in a different manner. Copyright and trademarks => refer to their respective owners.</p>
-		</div>
-	</div>
-</div>
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-7 text-right">
-				&copy; 2020
-			</div>
-			<div class="col-xs-5 text-right">
-				<a href="https://github.com/vishwas-r/Insta-Video-Downloader" target="_blank"><i class="fa fa-github"></i></a>
-				<a href="https://facebook.com/csultimates/" target="_blank"><i class="fa fa-facebook"></i></a>					
-				<a href="https://csultimates.com/blog/" target="_blank"><i class="fa fa-external-link"></i></a>					
-			</div>
-		</div>
-	</div>
-</footer>
-<script src="script.js"></script>
-</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instagram Videos Downloader | Download Instagram Video</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Instagram Videos Downloader - Download Instagram Videos, Photos, Reels, IGTV free. Download videos from Instagram & save to your device. Instagram Downloader"
+    />
+    <meta
+      name="keywords"
+      content="Instagram videos downloader,instagram video downloader,download instagram videos,ins video downloader,video instagram downloader,download videos from instagram, insta video downloader, downloader instagram video, instagram downloader, online instagram video downloader in hd, instagram video download, download instagram videos online,download image from instagram,how to download from instagram,free download of instagram,how to save videos from instagram,how to download instagram videos,q downloader net,save video ig,instagram post downloader,ig video download,free download instagram,instagram to video,save insta,instagram photo downloader,download images from instagram,save video from instagram"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="IgVideoDownloader" />
+    <link rel="apple-touch-icon" href="./img/insgramvideodownloaderlogo.webp" />
+    <link
+      rel="icon"
+      href="./img/insgramvideodownloaderIcon.png"
+      type="image/x-icon"
+    />
+    <meta name="theme-color" content="#742ADE" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Instagram Videos Downloader | Download Instagram Videos & Photos"
+    />
+    <meta property="og:url" content="https://instagramvideosdownloader.com/" />
+    <meta property="og:image" content="./img/insgramvideodownloaderlogo.jpg" />
+    <meta property="og:site_name" content="Instagram Videos Downloader" />
+    <meta
+      property="og:description"
+      content="Instagram Videos Downloader - Download Instagram Videos, Photos, Reels, IGTV free. Download videos from Instagram & save to your device. Instagram Downloader"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Instagram Videos Downloader | Download Instagram Video"
+    />
+    <meta
+      name="twitter:description"
+      content="Instagram Videos Downloader - Download Instagram Videos, Photos, Reels, IGTV free. Download videos from Instagram & save to your device. Instagram Downloader"
+    />
+    <meta name="twitter:image" content="./img/insgramvideodownloaderlogo.jpg" />
+    <meta name="twitter:url" content="https://instagramvideosdownloader.com/" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7S7PDQLMKE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-7S7PDQLMKE");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Instagram Videos Downloader",
+            "alternateName": "Instagram downloader",
+            "url": "https://instagramvideosdownloader.com/"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Instagram Videos Downloader | Download Instagram Video",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "xpath": [
+                "/html/head/title",
+                "/html/head/meta[@name='description']/@content"
+              ]
+            },
+            "inLanguage": "en",
+            "description": "Instagram Videos Downloader - Download Instagram Videos, Photos, Reels, IGTV free. Download videos from Instagram & save to your device. Instagram Downloader",
+            "url": "https://instagramvideosdownloader.com/"
+          },
+          {
+            "@type": "Organization",
+            "name": "Instagram Videos Downloader",
+            "alternateName": "Instagram downloader",
+            "url": "https://instagramvideosdownloader.com/",
+            "email": "instagramvideosdownloader@gmail.com",
+            "logo": "https://instagramvideosdownloader.com/img/insgramvideodownloaderlogo.jpg"
+          },
+          {
+            "@type": "WebApplication",
+            "name": "Instagram Videos Downloader",
+            "alternateName": "Instagram downloader",
+            "url": "https://instagramvideosdownloader.com/",
+            "image": "https://instagramvideosdownloader.com/img/insgramvideodownloaderlogo.jpg",
+            "operatingSystem": "Windows, Linux, iOS, Android, OSX, macOS",
+            "applicationCategory": "UtilitiesApplication",
+            "featureList": [
+              "Instagram Videos Downloader",
+              "Instagram Photos Downloader",
+              "Instagram Reels Downloader",
+              "IGTV Videos Downloader",
+              "Instagram Stories Downloader",
+              "Instagram Highlights Downloader",
+              "Instagram Profile Picture Downloader",
+              "Instagram Private Posts Downloader",
+              "Instagram Latest Posts Downloader"
+            ],
+            "contentRating": "Everyone",
+            "offers": { "@type": "Offer", "price": "0" }
+          }
+        ]
+      }
+    </script>
+    <link
+      rel="alternate"
+      href="https://instagramvideosdownloader.com/"
+      hreflang="x-default"
+    />
+    <link rel="canonical" href="https://instagramvideosdownloader.com/" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            src="./img/insgramvideodownloaderlogo.webp"
+            alt="insgramvideodownloaderlogo"
+            width="60"
+            height="100%"
+            title="Instagram Videos Downloader"
+            loading="lazy"
+          />
+          <span class="brand-text text-primary"
+            >Instagram Videos Downloader</span
+          >
+        </a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#howto">How To Download?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#faqs">Faqs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="section__1 container-flueid">
+      <div class="container">
+        <h1 class="heading text-white text-center mt-5 pt-3">
+          Instagram Videos Downloader
+        </h1>
+        <h2 class="heading-2 text-white text-center">
+          Download Instagram Videos, Photos, Reels & IGTV.
+        </h2>
+      </div>
+      <div class="inner__form__section container mt-4 mb-3 p-2">
+        <label for="basic-url" class="form-label text-white"
+          >Enter Instagram Post / video / photo Url ...
+          <span class="text-danger">*</span></label
+        >
+        <div class="input-group mb-3">
+          <input type="hidden" name="action" id="action" value="post" />
+          <input type="hidden" id="navTxt" value="Videos" />
+          <input
+            type="text"
+            class="form-control shadow-none p-3"
+            placeholder="Ex- https://www.instagram.com/p/ByP5KQ3A4fw/"
+            id="url"
+          />
+          <span class="input-group-text btn btn-primary pt-3" id="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+              />
+            </svg>
+            Download
+          </span>
+        </div>
+      </div>
+      <div class="downloading__content">
+        <div class="loading text-center"></div>
+        <div
+          class="section details text-center bg-white mx-auto row container-flueid"
+        ></div>
+        <div class="err"></div>
+      </div>
+    </div>
+    <div class="section__2 container mx-center text-center mt-5">
+      <div class="row mt-2 mb-5 otherLinks">
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="/photo" class="text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-image"
+                viewBox="0 0 16 16"
+              >
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                <path
+                  d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"
+                />
+              </svg>
+              <span class="d-none">photo</span>
+            </a>
+          </div>
+          <a href="/photo" class="text-white lead"
+            >Instagram Photo Downloader</a
+          >
+          <p class="text-warning">Download Instagram Photos</p>
+          <a href="/photo" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download Photos</a
+          >
+        </div>
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="https://insload.com/private" class="text-primary">
+              <svg
+                class="bi bi-play-btn"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                ></path>
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                ></path>
+              </svg>
+              <span class="d-none">private</span>
+            </a>
+          </div>
+          <a href="https://insload.com/private" class="text-white lead"
+            >Instagram Private Posts Downloader</a
+          >
+          <p class="text-warning">Download Instagram Private Photos & Videos</p>
+          <a href="https://insload.com/private" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download Private</a
+          >
+        </div>
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="/story/" class="text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-clock-history"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                />
+                <path
+                  d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                />
+                <path
+                  d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                /></svg
+              ><span class="d-none">story</span>
+            </a>
+          </div>
+          <a href="/story/" class="text-white lead"
+            >Instagram Story Downloader</a
+          >
+          <p class="text-warning">Download Instagram Stories</p>
+          <a href="/story/" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download Stories</a
+          >
+        </div>
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="/highlight/" class="text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-images"
+                viewBox="0 0 16 16"
+              >
+                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                <path
+                  d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"
+                /></svg
+              ><span class="d-none">highlight</span>
+            </a>
+          </div>
+          <a href="/highlight/" class="text-white lead"
+            >Instagram Highlight Downloader</a
+          >
+          <p class="text-warning">Download Instagram Highlights</p>
+          <a href="/highlight/" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download Highlights</a
+          >
+        </div>
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="/instadp" class="text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                /></svg
+              ><span class="d-none">instadp</span>
+            </a>
+          </div>
+          <a href="/instadp" class="text-white lead">Instagram Dp Downloader</a>
+          <p class="text-warning">Download Instagram Profile Pic</p>
+          <a href="/instadp" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download InstaDp</a
+          >
+        </div>
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="/reel/" class="text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-camera-reels"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"
+                />
+                <path
+                  d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"
+                />
+                <path
+                  d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                />
+              </svg>
+              <span class="d-none">reel</span>
+            </a>
+          </div>
+          <a href="/reel/" class="text-white lead">Instagram Reel Downloader</a>
+          <p class="text-warning">Download Instagram Reels</p>
+          <a href="/reel/" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download Reels</a
+          >
+        </div>
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="/igtv/" class="text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-tv"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"
+                />
+              </svg>
+              <span class="d-none">igtv</span>
+            </a>
+          </div>
+          <a href="/igtv/" class="text-white lead">Instagram IGTV Downloader</a>
+          <p class="text-warning">Download Instagram Igtv Videos</p>
+          <a href="/igtv/" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download Igtv</a
+          >
+        </div>
+        <div class="col-md-4 col-6 mt-4">
+          <div class="bg-white p-2 __icon mx-auto">
+            <a href="/latest-posts/" class="text-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-stickies"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1.5 0A1.5 1.5 0 0 0 0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5z"
+                />
+                <path
+                  d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zM3 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V9h-4.5A1.5 1.5 0 0 0 9 10.5V15H3.5a.5.5 0 0 1-.5-.5v-11zm7 11.293V10.5a.5.5 0 0 1 .5-.5h4.293L10 14.793z"
+                /></svg
+              ><span class="d-none">latest posts</span>
+            </a>
+          </div>
+          <a href="/latest-posts/" class="text-white lead"
+            >Instagram Latest Posts Downloader</a
+          >
+          <p class="text-warning">Download Instagram Latest Photos & Videos</p>
+          <a href="/latest-posts/" class="btn btn-outline-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cloud-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+              />
+              <path
+                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
+              />
+            </svg>
+            Download LatestPosts</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="section__3 mt-4 container-flueid bg-white p-2">
+      <div class="container p-2 shadow border">
+        <div class="text-center">
+          <img
+            src="./img/insgramvideodownloaderIcon.webp"
+            alt="Instagram videos downloader"
+            title="InstagramDownloader : Download Instagram Videos and Photos"
+            loading="lazy"
+            width="100"
+            height="100%"
+          />
+        </div>
+        <h2 class="what_heading text-center mt-2 mb-2 text-primary">
+          What is <b>Instagram Videos Downloader</b> ?
+        </h2>
+        <p class="lead">
+          Instagram Videos Downloader is a online tool that helps you to
+          download any posts from Instagram. Using instagramvideosdownloader you
+          can download any posts, photos, videos, reels, igtv videos, profile
+          picture and private posts.
+        </p>
+        <p class="lead">
+          <b>Instagram Video Downloader</b> is the best, simplest, and fastest
+          web tool on the internet to <b>Download Instagram Videos</b> . This
+          downloader works on any device. You can use Instagram Downloader on a
+          computer, laptop, mobile, and tablet.
+        </p>
+      </div>
+    </div>
+    <div class="section__4 howto container-flueid p-2" id="howto">
+      <h3 class="text-center text-light mt-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-question-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
+          />
+        </svg>
+        How to download videos and photos from Instagram?
+      </h3>
+      <p class="text-white text-center lead mt-3">
+        It is very easy to download videos and photos from insta videos
+        downloader. You just need to copy and paste instagram post link to
+        download insta photo or video.
+      </p>
+      <p class="text-white text-center lead">
+        It is just only 3 steps. Follow me.
+      </p>
+      <div class="container">
+        <div class="row mt-5">
+          <h3 class="text-center">1) Copy Instagram Post's Link</h3>
+          <div class="col-md-6 col-12 colImg shadow p-2">
+            <img
+              src="./img/3-dot-instagram-videos-downloader-to-copy-link-min.webp"
+              alt="click on 3 dots to copy instagram image link"
+              title="click on 3 dots to copy instagram image link to insta video download"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <p class="lead text-white">If you are using mobile:-</p>
+            <ul class="text-white">
+              <li class="lead">Open Instagram App from your mobile.</li>
+              <li class="lead">Select an Instagram Video or Image.</li>
+              <li class="lead">Click on 3 dots.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-12 colImg shadow p-2">
+            <img
+              src="./img/copy-instagram-video-download-link-min.webp"
+              alt="copy instagram link"
+              title="copy instagram post link from url bar for downloading instagram post"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <p class="lead text-white">If you are using PC / Computer:-</p>
+            <ul class="text-white">
+              <li class="lead">Open Instagram website from your computer.</li>
+              <li class="lead">Select an Instagram Post.</li>
+              <li class="lead">
+                You can copy Instagram post link directly from Url bar. Or click
+                on three dots.
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 colImg shadow p-2 mx-auto mt-3">
+            <img
+              src="./img/copy-instagramvideosdownloader-link-min.webp"
+              alt="copy instagram post link to download insta post"
+              title="to download insta post copy instagram link"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <ul class="text-white">
+              <li class="lead">
+                Now click on "Copy Link" to copy instagram video or photo link
+              </li>
+              <li class="lead">Come back to this website.</li>
+            </ul>
+          </div>
+          <h3 class="mt-5 text-center">2) Paste Instagram Post's Link</h3>
+          <div class="col-12 colImg shadow p-2 mx-auto">
+            <img
+              src="./img/paste-instagram-posts-link-to-download-min.webp"
+              alt="paste-instagram-posts-link-to-download"
+              title="paste instagram posts link to download instagram videos & photos"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <ul class="text-white">
+              <li class="lead">
+                Enter that post/ video/ photo link on url bar.
+              </li>
+              <li class="lead">Now click on "Download" button</li>
+            </ul>
+          </div>
+          <h3 class="text-center mt-5">
+            3) Download you Instagram video or Photo
+          </h3>
+          <div class="mx-auto col-12 colImg shadow p-2">
+            <img
+              src="img/download-instagram-video-min.webp"
+              alt="Download Instagram Video"
+              title="Instagram Video Download online and save ig video to device"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <ul class="text-white">
+              <li class="lead">Now download your video.</li>
+              <li class="lead">
+                Click on "Download Video" Button to download insta video
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-12 mt-2 colImg shadow p-2">
+            <img
+              src="img/instagram-photo-video-download-min.webp"
+              alt="Download Instagram Photos"
+              title="Download Instagram Photos"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <ul class="text-white">
+              <li class="lead">
+                To download instagram photo just click on "Download Photo"
+              </li>
+              <li class="lead">
+                You can <b>download multiple Instagram Photos</b>.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-12 colImg shadow p-2">
+            <img
+              src="img/download-instagram-profile-picture-min.webp"
+              alt="Download Instagram profile picture"
+              title="Download Instagram profile picture"
+              width="100%"
+              height="100%"
+              loading="lazy"
+            />
+            <ul class="text-white">
+              <li class="lead">
+                You can download any profile picture of an Instagram profile.
+              </li>
+              <li class="lead">
+                Click on "Download Profile Pic" to
+                <b>download Instagram Profile Picture</b>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how_to_section_2 p-3 bg-white">
+      <div class="container">
+        <h3 class="text-center text-primary mt-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-phone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"
+            />
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+          </svg>
+          How to <b>download instagram video on iPhone </b> or any mobile
+          devices ?
+        </h3>
+        <p class="lead text-center">
+          Download Ig Video or Photo to your iPhone or any mobile device is very
+          easy. In iPhone you can <b>download video from url</b>. That means you
+          just need to copy and paste insta video link to
+          <b>ig video download</b>.
+        </p>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-3 shadow p-1 col-12">
+          <div class="text-center mb-3">
+            <img
+              src="./img/download-on-mobile/select-ig-video-on-iphone.webp"
+              alt="Select Ig video to copy video url"
+              title="Select Ig Video"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <ol>
+            <li class="lead">
+              Open Instagram app on your iPhone or mobile device.
+            </li>
+            <li class="lead mt-2">
+              Select a video and click on "three dots" to get copy link.
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-3 shadow p-1 col-12">
+          <div class="text-center mb-3">
+            <img
+              src="./img/download-on-mobile/copy-instagram-video-link-on-mobile.webp"
+              alt="Copy Insta video link for downloading"
+              title="Copy insta video link to download hd ig video"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <ol>
+            <li class="lead">You can see the option 'Copy Link'.</li>
+            <li class="lead mt-2">Click on that to copy Insta video url</li>
+          </ol>
+        </div>
+        <div class="col-md-3 shadow p-1 col-12">
+          <div class="text-center mb-3">
+            <img
+              src="./img/download-on-mobile/paste-instagram-video-download-url-to-ig-video-saver.webp"
+              alt="Enter video link on ig saver url bar"
+              title="Enter coppied video link on ig video saver's url bar"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <ol>
+            <li class="lead">Open your browser and come to Ig video saver.</li>
+            <li class="lead mt-2">Paste that coppied link on url bar.</li>
+          </ol>
+        </div>
+        <div class="col-md-3 shadow p-1 col-12">
+          <div class="text-center mb-3">
+            <img
+              src="./img/download-on-mobile/download-instagram-video-on-iphone-or-mobile-device.webp"
+              alt="Download Instagram video on iPhone"
+              title="Save ig video on your mobile or iPhone"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <ol>
+            <li class="lead">
+              Now you can download you instagram video on your iPhone.
+            </li>
+            <li class="lead mt-2">
+              Click on 'Download Video' to <b>save Instagram video online</b> on
+              your iPhone or mobile devices.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="section__5 features p-1" id="features">
+      <div class="container mt-5">
+        <h3 class="text-center text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-award-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
+            />
+            <path
+              d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
+            />
+          </svg>
+          Features of Instagram Videos Downloader
+        </h3>
+        <div class="text-white text-center mt-3">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-cloud-arrow-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"
+              />
+            </svg>
+            <p class="lead">
+              Download any Posts:- Download any Videos, Photos, Reels, Igtv
+              videos, Profile pictures from Instagram using our video downloader
+              site.
+            </p>
+          </div>
+          <div class="mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-clock-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+              />
+            </svg>
+            <p class="lead">
+              Time Saving:- instagramvideosdownloader is very fast. You do not
+              need wait to much to download your instagram videos. you can
+              download insta posts in just seconds.
+            </p>
+          </div>
+          <div class="mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-file-lock2-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M7 6a1 1 0 0 1 2 0v1H7V6z" />
+              <path
+                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"
+              />
+            </svg>
+            <p class="lead">
+              Secure website:- Our website is very secure. We maintain our and
+              our users security. You can trust us.
+            </p>
+          </div>
+          <div class="mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-emoji-sunglasses-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.22 4.22 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A2.99 2.99 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM4.969 9.75A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z"
+              />
+            </svg>
+            <p class="lead">
+              Anonymous Downloading:- You download your posts/ videos/ photos
+              fully anonymously.You do not need to use any vpn or incognito mode
+              to download instagram videos and photos using our website. You are
+              free to download.
+            </p>
+          </div>
+          <div class="mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-file-earmark-arrow-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"
+              />
+            </svg>
+            <p class="lead">
+              Unlimited Downloading:- You can download unlimited videos and
+              photos using this site. No limit to download instagram posts.
+            </p>
+          </div>
+          <div class="mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-box-arrow-in-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"
+              />
+            </svg>
+            <div class="lead">
+              Registration Free:- If you think that you need to register on our
+              site to download instagram videos then your are wrong. Our site is
+              registration free means you do not need to register or login or
+              signup our site to instagram video download online.
+            </div>
+            <div class="mt-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-badge-hd-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.53 5.968h-.843v4.06h.843c1.117 0 1.622-.667 1.622-2.02 0-1.354-.51-2.04-1.622-2.04z"
+                />
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm5.396 3.001V11H6.209V8.43H3.687V11H2.5V5.001h1.187v2.44h2.522V5h1.187zM8.5 11V5.001h2.188c1.824 0 2.685 1.09 2.685 2.984C13.373 9.893 12.5 11 10.69 11H8.5z"
+                />
+              </svg>
+              <p class="lead">
+                Download HD Posts:- You can download HD Instagram videos and
+                photos.
+              </p>
+            </div>
+            <div class="mt-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-check-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                />
+              </svg>
+              <p class="lead">
+                Best Instagram videos, photos, reels and igtv downloader:-
+                https://instagramvideosdownloader.com is the best
+                <b>Instagram Downloader</b>. So download and save instagram
+                videos and photos to your device.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section__6 p-1 shadow" id="faqs">
+      <div class="container mt-5">
+        <h3 class="text-center text-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-patch-question-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"
+            />
+          </svg>
+          Frequently Asked Questions
+        </h3>
+        <div class="container mt-4 text-danger">
+          <h4>Why use Instagram videos downloader?</h4>
+          <p class="p-2 lead text-primary">
+            Instagram videos downloader provides you best service to download
+            instagram posts. You can not download Instagram videos, photos,
+            stories, reels etc.. directly. From our site you can directly
+            <b>save instagra videos and photos</b> to your device. Instagram
+            Downloader is free, fast, and secure.
+          </p>
+          <h4 class="mt-3"><b>How to save videos from instagram</b>?</h4>
+          <p class="p-2 lead text-primary">
+            To save videos from Instagram you have enter that video link on our
+            Ig downloader's url bar. You can see our "How To" section if you are
+            facing any problem to <b>save ig videos</b>.
+          </p>
+          <h4 class="mt-3"><b>Wow to copy videos on instagram</b>?</h4>
+          <ul class="lead text-primary">
+            <li>Open your Instagram app or website.</li>
+            <li>Select a video. Or click on a video.</li>
+            <li>Now you can notice three dots click on that.</li>
+            <li>
+              Now you should find 'Copy Link' option. Click on that to copy
+              videos link on Instagram.
+            </li>
+          </ul>
+          <h4 class="mt-3">Can I Download Videos & Photos from any browser?</h4>
+          <p class="p-2 lead text-primary">
+            Yes! You can use Instagram Downloader from any browser. Our site
+            works fine with every browser.
+          </p>
+          <h4 class="mt-3">How can I download Instagram videos and photos?</h4>
+          <ul>
+            <li class="p-2 lead text-primary">
+              Copy Instagram video or photo link.
+            </li>
+            <li class="p-2 lead text-primary">
+              Paste that link on url bar of instagram videos downloader.
+            </li>
+            <li class="p-2 lead text-primary">
+              And download your video or photo
+            </li>
+          </ul>
+          <p class="p-2 lead text-primary">
+            for more information you can see our
+            <a href="#howto">How To</a> section.
+          </p>
+          <h4 class="mt-3">
+            Can I use Instagram downloader on Computer or Mobile or iPhone ?
+          </h4>
+          <p class="p-2 lead text-primary">
+            Yes! You can use <b>IVD</b> or instagram videos downloader on any
+            device. And yes, You can download Instagram Videos & Photos in
+            iPhone using ins video downloader. Also you can use computer or any
+            phone to download post using Insta downloader.
+          </p>
+          <h4 class="mt-3">
+            Is it illegal to download videos and photos from Instagram?
+          </h4>
+          <p class="p-2 lead text-primary">
+            Not at all! It is not illegal to download instagram videos and
+            photos. But if you want your downloaded photos or videos in
+            commercial purpose, you have to proper permission of the original
+            owner.
+          </p>
+          <h4 class="mt-3">
+            Can I download private videos and photos from Instagram using
+            instagramvideodownloader.com?
+          </h4>
+          <p class="p-2 lead text-primary">
+            No right now you can not download private posts from here. But you
+            can use our
+            <strong>
+              <a href="https://insload.com/Private"
+                >Private Instagram Downloader</a
+              ></strong
+            >
+            to download any private instagram posts.
+          </p>
+          <h4 class="mt-3">
+            What will I do if I face some prolem to download insta videos?
+          </h4>
+          <p class="p-2 lead text-primary">
+            If you face some problem to download instagram videos here you can
+            use our
+            <a href="https://insload.com/videos">Instagram Video Downloader</a>
+            to download instagram videos. This site is our alternative site.
+          </p>
+          <h4 class="mt-3">How many posts/videos/photos can I download?</h4>
+          <p class="p-2 lead text-primary">
+            You do not have any limit to download instagram posts/videos/photos.
+            You can download unlimited videos, photos, reels, posts.
+          </p>
+          <h4 class="mt-3">Is this website secure?</h4>
+          <p class="p-2 lead text-primary">
+            Yes! this website is fully secure. We care about our and our users
+            security.
+          </p>
+          <h4 class="mt-3">Do you save our downloaded posts?</h4>
+          <p class="p-2 lead text-primary">
+            No! We do not and can not see your downloaded posts. Here you
+            download your instagram videos and photos anonymously.
+          </p>
+          <h4 class="mt-3">
+            Can I download IGTV Videos and Reels from
+            instagramvideosdownloader.com?
+          </h4>
+          <p class="p-2 lead text-primary">
+            Yes! you can download reels and igtv videos from instagram
+            downloader.
+          </p>
+          <h4 class="mt-3">Is registration required here?</h4>
+          <p class="p-2 lead text-primary">
+            No, You do not need to signup or login to download any posts.
+          </p>
+          <h4 class="mt-3">
+            Is instagramvideosdownloader.com / Instagram Video Downloader free?
+          </h4>
+          <p class="p-2 lead text-primary">
+            Yes! It will always be free. We will not charge you any cost to use
+            our site. This is the free instagram video downloader on the
+            internet. We will use advertisers on our site to get money and
+            support our website. But please do not use adblocker.
+          </p>
+          <h4 class="mt-3">
+            Can I download High Quality Videos and Photos from Instagram?
+          </h4>
+          <p class="p-2 lead text-primary">
+            Yes! You can download high quality posts/ videos/ photos/ from
+            Instagram using IVD.
+          </p>
+          <h4 class="mt-3">What is Instagram?</h4>
+          <p class="p-2 lead text-primary">
+            Instagram is a social media platform that emphasizes photo and video
+            sharing via its mobile app. You can take, edit, and publish visual
+            content for your followers to interact with thorough likes,
+            comments, and shares. <br />
+            <br />
+            Instagram (commonly abbreviated to IG or Insta) is an American photo
+            and video sharing social networking service created by Kevin Systrom
+            and Mike Krieger. In April 2012, Facebook acquired the service for
+            approximately US$1 billion in cash and stock. The app allows users
+            to upload media that can be edited with filters and organized by
+            hashtags and geographical tagging. Posts can be shared publicly or
+            with pre-approved followers. Users can browse other users' content
+            by tags and locations and view trending content. Users can like
+            photos and follow other users to add their content to a personal
+            feed. source:
+            <a
+              rel="nofollow"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Instagram"
+              >wikipedia</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="p-3">
+      <div class="container text-center">
+        <img
+          src="img/insgramvideodownloaderlogo.webp"
+          alt="insgramvideodownloaderlogo-footer"
+          title="Instagram Videos Downloader Footer Logo"
+          width="50"
+          height="100%"
+          loading="lazy"
+        />
+        <br />
+        <p class="text-secondary">
+          <a href="https://instagramvideosdownloader.com" class="text-secondary"
+            >instagramvideosdownloader.com</a
+          >
+          © 2021. All Rights Reserved
+        </p>
+        <p class="text-white">
+          <a href="/privacy" class="text-white">Privacy</a> |
+          <a href="/terms" class="text-white">Terms</a> |
+          <a href="/contact" class="text-white">Contact</a> | Follow us on
+          <a
+            class="text-white"
+            href="https://www.instagram.com/in.stagramvideosdownloader/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+            <span class="d-none">Instagram</span>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <script async src="./js/bootstrap.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
 </html>
