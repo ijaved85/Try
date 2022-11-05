@@ -71,11 +71,11 @@ const api =()=>{
 fetch(url,{
   method: "POST",
   
-  headers: {
+  headers: JSON.stringfy({
     "username" : "Afif78",
     "password" : "Afif@2001",
     "email" : "javediqbal8572@gmail.com"
-  }
+  })
 })
   .then(resp => resp.json())
   .then((data)=>{
