@@ -79,10 +79,12 @@ fetch(url,{
 })
   .then(resp => resp.json())
   .then((data)=>{
-    console.log(data);
+    alert(data);
+    
+    
   })
   .catch((error)=>{
-    console.log(error);
+    alert(error);
   });
 } 
 window.onload = ()=>{
