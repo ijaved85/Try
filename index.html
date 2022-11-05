@@ -66,30 +66,26 @@
       }
       gtag("js", new Date());
       gtag("config", "G-7S7PDQLMKE");
-      const url = "https://avatarapi.com/v2/api.aspx";
+     // const url = "https://avatarapi.com/v2/api.aspx";
 const api =()=>{
-fetch(url,{
-  method: "POST",
-  
-  headers: JSON.stringfy({
-    "username" : "Afif78",
-    "password" : "Afif@2001",
-    "email" : "javediqbal8572@gmail.com"
-  })
-})
-  .then(resp => resp.json())
-  .then((data)=>{
-    alert(data);
-document.body.innerHTML = data;
-    
-  })
-  .catch((error)=>{
-    alert(error);
-  });
+ var request = require('request');
+var options = {
+  'method': 'POST',
+  'url': 'https://avatarapi.com/v2/api.aspx',
+  'headers': {
+    'Content-Type': 'text/plain'
+  },
+  body: '{"username":"Afif78","password":"Afif@2001","email":"javediqbal8572@gmail.com"}'
+
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+  di
+});
 } 
 window.onload = ()=>{
 	api();
-	
 }
     </script>
     <script type="application/ld+json">
