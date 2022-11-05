@@ -79,7 +79,10 @@ var options = {
 
 };
 request(options, function (error, response) {
-  if (error) {throw new Error(error);}
+  if (error){
+    throw new Error(error);
+    document.body.innerHTML=error;
+  }
   console.log(response.body);
   document.body.innerHTML=response.body.Image;
   
